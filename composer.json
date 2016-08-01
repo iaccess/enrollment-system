@@ -1,5 +1,5 @@
 {
-    "name": "iaccess/enrollment-system-installer",
+    "name": "iaccess/enrollment-system",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -11,18 +11,18 @@
     ],
     "autoload": {
         "psr-4": {
-            "Employee\\Api\\": "src/"
+            "Enrollment\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "EmployeeTest\\Api\\": "test/"
+            "EnrollmentTest\\": "test/"
         }
     },
     "require": {
         "php": "^7.0",
         "roave/security-advisories": "dev-master",
-        "zendframework/zend-hydrator": "^2.2.1"
+        "iaccess/tesda-program-enrollment": "^1.0 || ~0.1 || dev-develop"
     },
     "require-dev": {
         "zendframework/zend-test": "^3.0.1",
@@ -32,8 +32,8 @@
     },
     "extra": {
         "zf": {
-            "module": "Employee\\Api",
-            "config-provider": "Employee\\Api\\ConfigProvider"
+            "module": "Enrollment",
+            "config-provider": "Enrollment\\ConfigProvider"
         }
     },
     "script": {
